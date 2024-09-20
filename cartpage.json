@@ -1,0 +1,7 @@
+{
+  "cartMessage": "//h1[.='%s']",
+  "cartEmptyMessage": "//h1[.='YOUR SHOPPING CART IS EMPTY']",
+  "cartCheckoutNav": "//div[@class='cart-checkout-nav']",
+  "returnToShopBtn": "//a[@class='btn black']"
+
+}
