@@ -10,6 +10,8 @@ Feature: Shope Page
     * print 'DEFAULT methods is load'
     * def featurePath = feature('demoweb','shoppage','shoppage')
     * def navigateToShop = method(featurePath, '@navigateToShop')
+    * def closePopupIfExist = method(featurePath, '@closePopupIfExist')
+    * def isPopupExist = method(featurePath, '@isPopupExist')
 
 
 
@@ -22,8 +24,7 @@ Feature: Shope Page
     @closePopupIfExist
     Scenario: Close Popup If Exist
       * print 'Default: Close Popup If Exist'
-      * def isPopupExist = call isPopupExist
-      * if (isPopupExist.result)
-      *   click(controls.closePopupButton)
-      *   waitForElementNotPresent(controls.closePopupButton)
-      * end
+      * print controls.closePopupBtn
+      * def isPopupExist = exists(controls.closePopupBtn) == true
+      * print isPopupExist
+      * if (isPopupExist) click(controls.closePopupBtn)
