@@ -1,0 +1,4 @@
+{
+  "popup" : "//div[contains(@id,'popmake')]",
+  "closePopupBtn": "//button[@class='pum-close popmake-close']"
+}

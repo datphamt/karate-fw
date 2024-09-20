@@ -1,0 +1,5 @@
+{
+  "languageLink": "//a[@id='js-link-box-%s%s']",
+  "searchTextbox": "#searchInput",
+  "searchButton": "//input[@name='go']"
+}

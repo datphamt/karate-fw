@@ -1,0 +1,5 @@
+{
+  "sideMenu": "//span[.='All departments']",
+  "cartButton": "//div[@class='header-main-wrapper ']//a[@href='https://demo.testarchitect.com/cart/']"
+
+}

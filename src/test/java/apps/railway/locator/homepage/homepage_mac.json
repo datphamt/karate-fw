@@ -1,0 +1,4 @@
+{
+  "welcomeText": "//h1[text()='Welcome to Safe Railway on MAC']",
+  "warningText": "//h1[text()='Warning on MAC']"
+}
