@@ -1,0 +1,5 @@
+{
+    "cartIcon": "//div[contains(@class,'connect-block-element-ochYn')]//a[contains(@href,'cart')]//span[@class='et_b-icon']",
+    "cartQuantityNumber": "//div[contains(@class,'connect-block-element-ochYn')]//span[@class='et_b-icon']//span[starts-with(@class,'et-cart-quantity')]",
+    "okCookieButton": "//a[@id='cn-accept-cookie']"
+  }

@@ -4,7 +4,7 @@ Feature: Home Page
     * def controls = locator('demoweb','homepage')
     * def appData = data('demoweb','appData')
 
-  @methods
+  @methods @parent=demoweb.basepage
   Scenario:
     * def parent = parentBusiness()
     * print 'DEFAULT methods is load'

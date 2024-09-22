@@ -2,6 +2,8 @@
   "popup" : "//div[contains(@id,'popmake')]",
   "closePopupBtn": "//button[@class='pum-close popmake-close']",
   "productIndex":"(//h2[@class='product-title'])[%s]",
-  "addToCartBtn":"//div[contains(@class,'product-details')]//a[contains(@class,'add_to_cart_button') and @data-product_name='%s']"
-
+  "addToCartBtn":"//div[contains(@class,'product-details')]//a[contains(@class,'add_to_cart_button') and @data-product_name='%s']",
+  "cartQuatity":"//div[@class='header-main-wrapper ']//span[@class='et_b-icon']//span[contains(@class,'et-cart-quantity')]",
+  "cartQuatityb":"//div[contains(@class,'connect-block-element-ochYn')]//span[@class='et_b-icon']//span[starts-with(@class,'et-cart-quantity')]",
+  "successLabel": "//div[@data-type='success']"
 }

@@ -4,7 +4,7 @@ Feature: Shope Page
     * def controls = locator('demoweb','shoppage')
     * def appData = data('demoweb','appData')
 
-  @methods
+  @methods @parent=demoweb.basepage
   Scenario:
     * def parent = parentBusiness()
     * print 'DEFAULT methods is load'
@@ -13,6 +13,8 @@ Feature: Shope Page
     * def closePopupIfExist = method(featurePath, '@closePopupIfExist')
     * def isPopupExist = method(featurePath, '@isPopupExist')
     * def addProductToCart = method(featurePath, '@addProductToCart')
+    * def getCartQuantity = method(featurePath, '@getCartQuantity')
+    * def checkCartQuantity = method(featurePath, '@checkCartQuantity')
 
 
 
@@ -30,18 +32,22 @@ Feature: Shope Page
       * print isPopupExist
       * if (isPopupExist) click(controls.closePopupBtn)
 
-  @addProductToCart
+  @addProductToCart @parent=demoweb.basepage
     Scenario:
       * print 'Default: Add to Cart'
       * def airpodsAddToCartBtn = format(controls.addToCartBtn, productname)
       * click(airpodsAddToCartBtn)
+      * waitFor(controls.successLabel)
 
   @getCartQuantity
     Scenario:
       * print 'Default: Get Product Quantity'
-      * def quantity = text(controls.cartQuatity)
-      * print quantity
-      * return quantity
+      * def text = text(controls.cartQuatity)
+
+  @checkCartQuantity
+  Scenario:
+    * print 'Default: Get Product Quantity'
+    * exists(controls.cartQuatity)
 
 
 

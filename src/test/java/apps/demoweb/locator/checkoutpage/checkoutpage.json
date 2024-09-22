@@ -1,0 +1,19 @@
+{
+    "firstNameTxt": "//input[@id='billing_first_name']",
+    "lastNameTxt": "//input[@id='billing_last_name']",
+    "countrySl": "//select[@id='billing_country']",
+    "addressTxt": "//input[@id='billing_address_1']",
+    "cityTxt": "//input[@id='billing_city']",
+    "phoneTxt": "//input[@id='billing_phone']",
+    "emailTxt": "//input[@id='billing_email']",
+    "createAccountCb": "//input[@name='createaccount']",
+    "cashOnDeliveryRadiobox": "//input[@id='payment_method_cod']",
+    "placeOrderBtn": "//button[text()='Place order']",
+    "thankYouMessage": "//p[text()='Thank you. Your order has been received.']",
+    "orderNumberLbl": "//li[@class='woocommerce-order-overview__order order']//strong",
+    "dateLbl": "//li[@class='woocommerce-order-overview__date date']//strong",
+    "totalLbl": "//li[@class='woocommerce-order-overview__total total']//bdi",
+    "paymentMethodLbl": "//li[@class='woocommerce-order-overview__payment-method method']//strong",
+    "productName": "//td[contains(@class,'product-name')]//a",
+    "detailsOrderLbl": "//section[@class='woocommerce-order-details']"
+}
