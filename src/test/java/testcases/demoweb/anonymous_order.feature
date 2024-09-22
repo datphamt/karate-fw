@@ -8,6 +8,7 @@ for help, see: https://github.com/karatelabs/karate/wiki/IDE-Support
     * def cartPage = business('demoweb', 'cartpage')
     * def shopPage = business('demoweb', 'shoppage')
     * def emptyMsg = { message: 'YOUR SHOPPING CART IS EMPTY' }
+    * def airpods = { productname: 'AirPods' }
 
   Scenario:
     * call homePage.navigateToApp
@@ -18,6 +19,8 @@ for help, see: https://github.com/karatelabs/karate/wiki/IDE-Support
 #    * match isEmptyCart.result == true
     * call cartPage.returnShopPage
     * call shopPage.closePopupIfExist
+    * call shopPage.addProductToCart airpods
+    * match shopPage.getCartQuantity == '1'
     * print 'done'
     * delay(20000)
 

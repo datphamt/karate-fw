@@ -12,6 +12,7 @@ Feature: Shope Page
     * def navigateToShop = method(featurePath, '@navigateToShop')
     * def closePopupIfExist = method(featurePath, '@closePopupIfExist')
     * def isPopupExist = method(featurePath, '@isPopupExist')
+    * def addProductToCart = method(featurePath, '@addProductToCart')
 
 
 
@@ -28,3 +29,21 @@ Feature: Shope Page
       * def isPopupExist = exists(controls.closePopupBtn) == true
       * print isPopupExist
       * if (isPopupExist) click(controls.closePopupBtn)
+
+  @addProductToCart
+    Scenario:
+      * print 'Default: Add to Cart'
+      * def airpodsAddToCartBtn = format(controls.addToCartBtn, productname)
+      * click(airpodsAddToCartBtn)
+
+  @getCartQuantity
+    Scenario:
+      * print 'Default: Get Product Quantity'
+      * def quantity = text(controls.cartQuatity)
+      * print quantity
+      * return quantity
+
+
+
+
+    

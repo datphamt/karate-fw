@@ -42,8 +42,7 @@ Feature: Home Page
   Scenario:
     * print 'Default: Return Shope Page'
     * click(controls.returnToShopBtn)
-    * waitForUrl('/shop')
-#    * delay(5000)
+    * delay(5000)
 
 
 

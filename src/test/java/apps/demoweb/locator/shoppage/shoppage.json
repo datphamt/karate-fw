@@ -1,4 +1,7 @@
 {
   "popup" : "//div[contains(@id,'popmake')]",
-  "closePopupBtn": "//button[@class='pum-close popmake-close']"
+  "closePopupBtn": "//button[@class='pum-close popmake-close']",
+  "productIndex":"(//h2[@class='product-title'])[%s]",
+  "addToCartBtn":"//div[contains(@class,'product-details')]//a[contains(@class,'add_to_cart_button') and @data-product_name='%s']"
+
 }
