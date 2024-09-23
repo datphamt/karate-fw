@@ -108,8 +108,8 @@ function f() {
         ios_local: {
             settings: {
                 type: 'ios',
-                webDriverUrl:'http://127.0.0.1:4723/',
-                webDriverPath : '/',
+                webDriverUrl:'http://172.17.31.71:4726/',
+                webDriverPath : '/wd/hub',
                 start: false,
                 platformName: "ios",
                 httpConfig : { readTimeout: 160000 },
@@ -119,7 +119,7 @@ function f() {
                             "platformName": "iOS",
                             "appium:deviceName": "iPhone",
                             //"appium:platformVersion": "17.2.1",
-                            "appium:udid": "00008110-000105E03491801E",
+                            "appium:udid": "00008020-000D306A01B9002E",
                             "appium:automationName": "XCUITest",
                             "appium:bundleId": "com.bachhoaxanh",
                             "appium:autoDismissAlerts": true,

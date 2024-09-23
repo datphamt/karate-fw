@@ -1,0 +1,4 @@
+{
+  "searchSection" : "//XCUIElementTypeOther[@name=\"Chọn vị trí giao gần bạn\"]/following-sibling::XCUIElementTypeOther",
+  "searchInput": "//XCUIElementTypeTextField[@name=\"header_txt_textinput_search\"]"
+}

@@ -1,0 +1,3 @@
+{
+  "searchInput" : "//XCUIElementTypeOther[@name=\"Chọn vị trí giao gần bạn\"]/following-sibling::XCUIElementTypeOther"
+}
