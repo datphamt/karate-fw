@@ -14,6 +14,11 @@ Feature: checkout Page
     * def isSuccessfullyOrderMessageExist = method(featurePath, '@isSuccessfullyOrderMessageExist')
     * def checkReceiptInfo = method(featurePath, '@checkReceiptInfo')
 
+    @waitForPageLoad
+    Scenario: Wait for Checkoutpage load
+        *print 'Default: Wait for Checkoutpage load'
+        * waitFor(controls.placeOrderBtn)
+
     @enterCheckoutInfo
     Scenario: Enter Checkout Information
         * print 'Default: enter billing detail'

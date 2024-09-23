@@ -37,6 +37,7 @@ for help, see: https://github.com/karatelabs/karate/wiki/IDE-Support
     * match orderStatusNodeColor.value == 'rgb(154, 154, 154)'
     * call cartPage.clickAcceptCookie
     * call cartPage.proceedToCheckout
+    * call shopPage.waitForPageLoad
     * def shoppingCartNodeColor = call cartPage.getProgressNodeColor { nodeName: 'Shopping cart' }
     * def checkoutNodeColor = call cartPage.getProgressNodeColor { nodeName: 'Checkout' }
     * def orderStatusNodeColor = call cartPage.getProgressNodeColor { nodeName: 'Order status' }

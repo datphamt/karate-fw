@@ -15,6 +15,7 @@ Feature: Shope Page
     * def addProductToCart = method(featurePath, '@addProductToCart')
     * def getCartQuantity = method(featurePath, '@getCartQuantity')
     * def checkCartQuantity = method(featurePath, '@checkCartQuantity')
+    * def waitForPageLoad = method(featurePath, '@waitForPageLoad')
 
 
 
@@ -32,7 +33,7 @@ Feature: Shope Page
       * print isPopupExist
       * if (isPopupExist) click(controls.closePopupBtn)
 
-  @addProductToCart @parent=demoweb.basepage
+  @addProductToCart
     Scenario:
       * print 'Default: Add to Cart'
       * def airpodsAddToCartBtn = format(controls.addToCartBtn, productname)

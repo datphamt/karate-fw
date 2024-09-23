@@ -68,7 +68,7 @@ Feature: Home Page
   Scenario:
     * print 'Default: Proceed to Checkout'
     * click(controls.processToCheckoutButton)
-    * delay(5000)
+    * delay(10000)
 
 
 
