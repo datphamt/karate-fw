@@ -2,6 +2,7 @@
   "cartMessage": "//h1[.='%s']",
   "cartEmptyMessage": "//h1[.='YOUR SHOPPING CART IS EMPTY']",
   "cartCheckoutNav": "//div[@class='cart-checkout-nav']",
-  "returnToShopBtn": "//a[@class='btn black']"
-
+  "returnToShopBtn": "//a[@class='btn black']",
+  "progressNavNode": "//a[text()=' %s']",
+  "processToCheckoutButton": "//div[@class='wc-proceed-to-checkout']/a"
 }
